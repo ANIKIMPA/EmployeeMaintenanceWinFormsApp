@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--This is the collection of employees.-->
+<Employees>
+    <Employee EmployeeId="HW-111">
+        <FullName>John Doe</FullName>
+        <Department>Finance</Department>
+        <WeekStart>04/23/2008 12:00:00 a. m.</WeekStart>
+        <Salary>400.00</Salary>
+    </Employee>
+    <Employee EmployeeId="HW-222">
+        <FullName>Jane Doe</FullName>
+        <Department>InformationTechnology</Department>
+        <WeekStart>01/23/2008 12:00:00 a. m.</WeekStart>
+        <Salary>450.00</Salary>
+    </Employee>
+</Employees>

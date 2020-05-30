@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="EmployeeMaintenance.Presentation.AddNewEmployeeForm" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>CAAAAQQAACAhABEAIACAAMoCACAAQEAAAAAggAIAAAA=</HashCode>
+      <FileName>AddNewEmployeeForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeeMaintenance.Presentation.EmployeeMaintenanceForm" Collapsed="true">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAgECAAAAjwIACAAAACgCAgwAYAAQAAAAAEAAo=</HashCode>
+      <FileName>EmployeeMaintenanceForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeeMaintenance.Presentation.ModifyEmployeeForm" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAAQQAACAhAAEAIACIAMqCACAAQEAAAAAggAIAAAA=</HashCode>
+      <FileName>ModifyEmployeeForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeeMaintenance.Presentation.ViewEmployeeForm" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAQAACEgAAAAIACIAIoCgAAAQEAAAAAggAAAAAA=</HashCode>
+      <FileName>ViewEmployeeForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeeMaintenance.Domain.Employee" Collapsed="true">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="EmployeeMaintenance.DataAccess.EmployeeBinaryFileDA" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EmployeeMaintenance.DataAccess.EmployeeCsvFileDA" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EmployeeMaintenance.DataAccess.EmployeeInMemoryDA" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="2.75" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EmployeeMaintenance.DataAccess.EmployeeXmlFileDA" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ValidationLibrary.Validator" Collapsed="true">
+    <Position X="7" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="EmployeeMaintenance.DataAccess.IEmployeeDA" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="EmployeeMaintenance.Domain.Department" Collapsed="true">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

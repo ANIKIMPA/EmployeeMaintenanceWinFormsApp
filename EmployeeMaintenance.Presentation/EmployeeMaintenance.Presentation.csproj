@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67A7056C-BE47-4AE4-AD56-023E0BC1B406}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmployeeMaintenance.Presentation</RootNamespace>
+    <AssemblyName>EmployeeMaintenance.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewEmployeeForm.designer.cs">
+      <DependentUpon>AddNewEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseFileForm.Designer.cs">
+      <DependentUpon>ChooseFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMaintenanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeMaintenanceForm.designer.cs">
+      <DependentUpon>EmployeeMaintenanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyEmployeeForm.designer.cs">
+      <DependentUpon>ModifyEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployeeForm.Designer.cs">
+      <DependentUpon>ViewEmployeeForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddNewEmployeeForm.resx">
+      <DependentUpon>AddNewEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseFileForm.resx">
+      <DependentUpon>ChooseFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMaintenanceForm.resx">
+      <DependentUpon>EmployeeMaintenanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyEmployeeForm.resx">
+      <DependentUpon>ModifyEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmployeeForm.resx">
+      <DependentUpon>ViewEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeMaintenance.DataAccess\EmployeeMaintenance.DataAccess.csproj">
+      <Project>{9512c0f9-257e-44f8-ae60-216d7e90446f}</Project>
+      <Name>EmployeeMaintenance.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeeMaintenance.Domain\EmployeeMaintenance.Domain.csproj">
+      <Project>{da3c80f3-1050-48b9-9760-ab258d53b67b}</Project>
+      <Name>EmployeeMaintenance.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidationLibrary\ValidationLibrary.csproj">
+      <Project>{e604fb22-30c6-493b-bb5d-d84014917599}</Project>
+      <Name>ValidationLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EmployeeClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
